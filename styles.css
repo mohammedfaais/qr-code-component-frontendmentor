@@ -18,21 +18,27 @@ body{
     color: hsl(228, 45%, 44%); 
 }
 
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
 .qr-card-container{
     background-color:  hsl(0, 0%, 100%);
     height: auto;
     width: 320px;
-    margin: 100px auto;
+    /* margin: 50px auto; */
     text-align: center;
     padding: 5px;
     border-radius: 30px;
 }
 
 .qr-card-container img{
-    width: 300px;
     height: 300px;
     border-radius: 30px;
-    padding: 10px 0px;
+    padding-top: 10px;
 }
 
 
@@ -40,7 +46,7 @@ body{
     font-size: 23px;
 }
 
-.qr-card-container h2{
+.qr-card-container p{
     font-size: 15px;
     color: #93969F;
     font-weight: 100;
@@ -49,7 +55,6 @@ body{
 
 @media(max-width:375px){
     .qr-card-container{
-        margin: 50px auto;
         padding: 0px 0px 10px 0px;
         width: 280px;
     }
